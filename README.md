@@ -1,3 +1,99 @@
+# Campus Recruitment System 🎓  
+## 📌 Overview  
+The **Campus Recruitment System** is a web-based platform designed to streamline the recruitment process for colleges and universities. It provides a **centralized platform** where students, recruiters, and placement officers can interact efficiently.  
+
+This system eliminates the need for manual paperwork, speeds up recruitment cycles, and ensures a transparent hiring process for all stakeholders.  
+
+## ✨ Features  
+- 👨‍🎓 **Student Module**  
+  - Student registration & profile creation  
+  - Upload resumes and certificates  
+  - Apply for job postings  
+  - View recruitment status  
+- 🏢 **Recruiter Module**  
+  - Post new job openings  
+  - Filter and shortlist candidates  
+  - Send interview notifications  
+- 🎓 **Placement Officer Module**  
+  - Approve student and recruiter registrations  
+  - Manage and monitor recruitment activities  
+  - Generate reports and statistics  
+- 🔒 **Authentication & Security**  
+  - Secure login for students, recruiters, and admins  
+  - Role-based access control  
+
+## 🛠️ Tech Stack  
+- **Framework:** Laravel (PHP Framework)  
+- **Backend:** PHP 8.x  
+- **Database:** PostgreSQL  
+- **Frontend:** HTML5, CSS3, JavaScript, Bootstrap  
+- **Server:** Apache / Nginx  
+
+## ⚙️ Installation & Setup  
+### Prerequisites  
+Make sure you have the following installed:  
+- PHP >= 8.0  
+- Composer  
+- PostgreSQL  
+- Git  
+- Apache/Nginx server (XAMPP/LAMP/WAMP or manual setup)  
+
+### Steps  
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/your-username/campus-recruitment-system.git
+   cd campus-recruitment-system
+   ```  
+2. **Install dependencies**  
+   ```bash
+   composer install
+   ```  
+3. **Configure Environment**  
+   Copy `.env.example` to `.env` and update database credentials:  
+   ```env
+   DB_CONNECTION=pgsql
+   DB_HOST=127.0.0.1
+   DB_PORT=5432
+   DB_DATABASE=campus_recruitment
+   DB_USERNAME=your_postgres_user
+   DB_PASSWORD=your_postgres_password
+   ```  
+4. **Run database migrations**  
+   ```bash
+   php artisan migrate
+   ```  
+5. **Start the development server**  
+   ```bash
+   php artisan serve
+   ```  
+   Access the project at: `http://127.0.0.1:8000`  
+
+## 📊 System Architecture  
+```
++---------------------+        +-----------------+        +--------------------+
+|     Students        |<------>|   Application   |<------>|     Recruiters     |
+| (Profiles, Apply)   |        |   (Laravel)     |        | (Job Postings)     |
++---------------------+        +-----------------+        +--------------------+
+                                     |
+                                     v
+                              +--------------+
+                              | PostgreSQL   |
+                              |   Database   |
+                              +--------------+
+```  
+
+## 🚀 Future Enhancements  
+- AI-based resume shortlisting  
+- Email & SMS notifications  
+- Integration with third-party job portals  
+- Analytics dashboard for placement officers  
+
+## 📄 License  
+This project is developed as part of an **academic mini-project**.  
+For educational purposes only.  
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
